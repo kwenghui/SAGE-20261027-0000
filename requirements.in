@@ -1,0 +1,7 @@
+# Top-level dependencies (source of truth for the hash-pinned lock file).
+# Regenerate the lock with network access:
+#   pip install pip-tools
+#   pip-compile --generate-hashes --strip-extras -o requirements.lock requirements.in
+# Install in production with:
+#   pip install --require-hashes -r requirements.lock
+-r requirements.txt
